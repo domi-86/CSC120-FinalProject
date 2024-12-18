@@ -10,8 +10,8 @@ public class Game {
     private Map map;
     private boolean stillPlaying;
     private Player player;
-    private List <String> commands;
-    private List <String> movementCommands;
+    private List<String> commands;
+    private List<String> movementCommands;
     private Room currentRoom;
     private Inventory inventory;
 

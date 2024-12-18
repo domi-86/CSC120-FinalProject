@@ -22,5 +22,6 @@ Note:  It's a good idea to also make this list available inside the game, in res
 
 If your game includes challenges that must be overcome to win, also list them below.
 
-- pick up a key to open a door
-- in one hallway you have to answer fast [timer] because the ceiling is caving in, or get crushed 
+//pick up a key to open a door
+// in one hallway you have to answer fast [timer] because the ceiling is caving in, or get crushed 
+planned but didn't have time to implement
