@@ -2,14 +2,18 @@ This file will contain documentation for all commands available in your game.
 
 Note:  It's a good idea to also make this list available inside the game, in response to a `HELP` command.
 
-help
-look around
-examine
-go/enter/exit n/e/s/w
-drop
-pick up/take
-use
-
+            available commands:
+                - "go north" / "n"
+                - "go east" / "e"
+                - "go west" / "w"
+                - "go south" / "s"
+                - "look around"
+                - "examine"
+                - "drop"
+                - "pick up" / "take"
+                - "inv" / "inventory"
+                - "use" / "flip" (a switch)
+                - "help
 
 
 

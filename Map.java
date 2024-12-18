@@ -1,13 +1,16 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Map {
     private Room[][] map;
+    //private List<String> directions;
     //private ArrayList<Room> visited; 
 
 
     public Map(Room[][] map) {
         this.map = map;
+        //this.directions = Arrays.asList("north,east,south,west");
         //this.visited = new ArrayList<>();
     }
 
@@ -15,6 +18,7 @@ public class Map {
        this.map[xPos][yPos] = room;
 
     }
+
 
     // public void addVisited() { // work on later
 
