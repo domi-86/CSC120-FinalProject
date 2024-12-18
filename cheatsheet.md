@@ -12,8 +12,9 @@ Note:  It's a good idea to also make this list available inside the game, in res
                 - "drop"
                 - "pick up" / "take"
                 - "inv" / "inventory"
-                - "use" / "flip" (a switch)
-                - "help
+                - "use"
+                - "help"
+                - "quit"
 
 
 

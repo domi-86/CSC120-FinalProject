@@ -74,17 +74,13 @@ public class Room {
 
     }
 
-    public void blockExit(String direction) {
-        // change a Room so that an exit is now false
-    }
+    // public void blockExit(String direction) {
+    //     // change a Room so that an exit is now false
+    // }
 
-    public void openExit(String direction) {
-        //change a Room so that an exit is now true
-    }
-
-    public void lookAround() {
-        System.out.println(this.description);
-    }
+    // public void openExit(String direction) {
+    //     //change a Room so that an exit is now true
+    // }
 
     public boolean getHasItem() {
         return this.hasItem;
@@ -98,14 +94,10 @@ public class Room {
         return this.item;
     }
 
+
+    @Override
     public String toString() {
         return this.name;
     }
 
-    
-
-    // look around
-
-    // each Room has a description, doors, and possibly objects in it
-    
 }

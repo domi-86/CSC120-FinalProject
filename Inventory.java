@@ -1,6 +1,6 @@
 
 import java.util.Arrays;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 public class Inventory {
 
@@ -15,7 +15,53 @@ public class Inventory {
 
     // add to inventory
 
+    public void addToInv(TakeableItem item) {
+        
+        for (int i = 0; i < 5; i++) {
+            if (this.inv[i] == null) {
+                this.inv[i] = item;
+                break;
+            }
+        }
+    }
+
+    public void addToInv(String item) {
+
+        addToInv(getItem(item));
+
+    }
+
     //remove from inventory 
+
+    public void removeFromInv(TakeableItem item) {
+
+        for (int i = 0; i < 5; i++) {
+            if (this.inv[i] == item) {
+                this.inv[i] = null;
+                break;
+            }
+        }
+
+    }
+
+    public void removeFromInv(String item) {
+
+        removeFromInv(getItem(item));
+
+    }
+
+    public TakeableItem getItem(String itemName) {
+
+        for (int i = 0; i < 5; i++) {
+            if (this.inv[i].getName().equals(itemName)) {
+
+                return this.inv[i];
+                
+            }
+
+    }
+        return null;
+}
 
     public boolean itemInInv(String item) {
         for (TakeableItem i : this.inv) {
@@ -49,5 +95,12 @@ public class Inventory {
     public boolean isEmpty() {
         return Arrays.asList(this.inv).isEmpty();
     }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(this.inv);
+    }
+    
+
 
 }

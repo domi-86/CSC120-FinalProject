@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Map {
     private Room[][] map;
@@ -8,17 +6,26 @@ public class Map {
     //private ArrayList<Room> visited; 
 
 
+    /**
+     * Constructor
+     * @param map
+     */
     public Map(Room[][] map) {
         this.map = map;
         //this.directions = Arrays.asList("north,east,south,west");
         //this.visited = new ArrayList<>();
     }
 
+    /**
+     * adds room to the map
+     * @param room
+     * @param xPos
+     * @param yPos
+     */
     public void addRoom(Room room, int xPos, int yPos) {
-       this.map[xPos][yPos] = room;
+        this.map[xPos][yPos] = room;
 
     }
-
 
     // public void addVisited() { // work on later
 
@@ -27,23 +34,17 @@ public class Map {
     //     }
     // }
 
-    
-
-    //how to travel between rooms?
-
-    //travel between floors
-
-    // enter()
-    // exit
-
+    /**
+     * prints out a readable map
+     */
     public void showMap() {
         System.out.println("=========\n MAP:");
-        for (Room[] row : map)
+        for (Room[] row: map)
 
             System.out.println(Arrays.toString(row));
 
         System.out.println("=========");
-    
+
     }
 
 }
